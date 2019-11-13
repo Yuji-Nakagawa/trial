@@ -1,8 +1,8 @@
 def AND(x1,x2):
     w1, w2, theta = 0.6, 0.6, 1
     tmp = w1*x1 + w2*x2
-    if tmp > theta:
-        return 1
-    else:
+    if tmp <=  theta:
         return 0
+    elif tmp > theta:
+        return 1
 
